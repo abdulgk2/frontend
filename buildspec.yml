@@ -26,6 +26,7 @@ phases:
   pre_build:
     commands:
       - echo "Validating environment variables..."
+      - echo "This is codepipeline trigger"
       - test -s .env.development || (echo "Missing .env.development file or empty"; exit 1)
       - npm install # Ensure all dependencies are installed
 
