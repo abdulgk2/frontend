@@ -10,7 +10,7 @@ phases:
       - npm install # Install project dependencies
       - npm -v # Verify npm version
       - node -v # Verify Node.js version
-      # - |
+      - |
         aws ssm get-parameters-by-path \
             --path "/todo/dev/FE" \
             --recursive \
